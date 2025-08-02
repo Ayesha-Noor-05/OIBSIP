@@ -1,0 +1,26 @@
+This project analyzes retail sales data to uncover trends, customer behavior, and business insights. The goal is to help stakeholders understand sales performance, identify high-value customers, and make data-driven decisions.
+
+Dataset:
+The dataset includes the following information:
+
+Transaction ID 
+Date
+Customer
+Gender
+Age
+Product Category 
+Quantity
+Price per unit 
+Total Amount 
+
+Objectives:
+Perform exploratory data analysis (EDA)
+Visualize sales trends over time
+Identify top-selling products and regions
+Analyze customer purchase behavior
+Suggest improvements for inventory and marketing strategy
+
+Tools:
+Power Bi
+Excel
+
