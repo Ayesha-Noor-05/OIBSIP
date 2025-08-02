@@ -1,0 +1,97 @@
+Wine Quality Prediction
+
+📌 Overview
+
+This project focuses on predicting the quality of wine based on its physicochemical properties (like acidity, sugar content, and pH). The task was treated as a classification problem.
+
+🎯 Objective
+
+Predict wine quality using supervised machine learning.
+Handle class imbalance by restructuring the classification labels.
+Identify key chemical properties that influence wine quality.
+
+📁 Dataset
+
+This dataset contains 1143 rows and 13 columns
+
+Features:
+
+Fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, alcohol
+
+Quality (score between 0–10)
+
+
+
+⚠️ Class Imbalance
+
+Most wine samples had quality scores of 5 and 6, making the dataset highly imbalanced.
+
+To handle this, we re-categorized wine quality into 3 broader classes:
+
+Low Quality → 3–4
+
+Medium Quality → 5–6
+
+High Quality → 7–8
+
+
+🧰 Tools & Technologies
+
+Python
+
+Pandas, NumPy
+
+Seaborn, Matplotlib
+
+Scikit-learn 
+
+🔍 Exploratory Data Analysis (EDA)
+
+Alcohol and volatile acidity were most correlated with quality.
+
+Visualized feature distributions using boxplots.
+
+
+
+
+🤖 Models Used
+
+SVC
+
+
+📊 Model Evaluation
+
+                  Confusion matrix
+[[ 3 40  4]
+ [ 3 84  1]
+ [ 0 26 12]]
+
+             Classification report 
+  precision    recall  f1-score   support
+
+           0       0.50      0.06      0.11        47
+           1       0.56      0.95      0.71        88
+           2       0.71      0.32      0.44        38
+
+    accuracy                           0.57       173
+   macro avg       0.59      0.44      0.42       173
+weighted avg       0.58      0.57      0.49       173
+
+
+🔮 Future Work
+
+Perform hyperparameter tuning using GridSearchCV
+
+Deploy the model using Flask or Streamlit
+
+Test on unseen wine samples or newer datasets
+
+
+
+Author
+
+Ayesha Noor
+Machine Learning Enthusiast | Data Analyst
+
+
+Let me know if you'd like to include a confusion matrix, sample predictions, or deployment guide.
