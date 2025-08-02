@@ -1,0 +1,71 @@
+Fraud Detection Using Machine Learning
+
+This project focuses on detecting fraudulent transactions using machine learning. The dataset is highly imbalanced — fraudulent transactions represent a tiny fraction of the data — so downsampling was used to balance the classes.
+
+📁 Dataset Overview
+
+Source: Kaggle - Credit Card Fraud Detection
+
+Total Transactions: 284,807
+
+Fraudulent Cases: 492 (~0.17%)
+
+Features: 30 anonymized features (V1 to V28, Time, and Amount)
+
+Target: Class (0 = Not Fraud, 1 = Fraud)
+
+
+🎯 Objective
+
+Build a model that accurately detects fraudulent transactions while minimizing false positives, with a strong focus on handling extreme class imbalance through downsampling techniques.
+
+
+⚙️ Approach
+
+🧹 Preprocessing
+
+Feature scaling using StandardScaler
+Converted highly imbalanced dataset into a balanced subset by randomly downsampling the majority class (non-fraud)
+As there were 492 fraud cases so 500 random not fraud cases were selected for the analysis.
+
+🧠 Model Used
+Decision Tree classifier
+
+
+
+📏 Evaluation Metrics
+classification_report, accuracy_score, confusion_matrix
+
+📉 Results (After Downsampling)
+
+ precision    recall  f1-score   support
+
+           0       0.98      0.89      0.93       169
+           1       0.86      0.98      0.92       123
+
+    accuracy                           0.92       292
+   macro avg       0.92      0.93      0.92       292
+weighted avg       0.93      0.92      0.93       292
+
+Confusion matrix
+
+[[150  19]
+ [  3 120]]
+
+
+📌 Key Insights
+
+Downsampling was effective in creating a balanced dataset for model training.
+
+Models performed well on the balanced dataset but should be re-tested on the original imbalanced data for real-world deployment.
+
+🛠 Tools & Libraries
+
+Python
+
+Pandas, NumPy
+Scikit-learn
+Matplotlib, Seaborn
+
+
+
