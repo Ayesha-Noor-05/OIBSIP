@@ -1,0 +1,53 @@
+Customer Segmentation Analysis
+
+📌 Project Overview
+
+This project applies K-Means clustering to group customers into meaningful segments based on their demographics, purchasing behavior, and preferences.
+The goal is to help businesses understand customer profiles, tailor marketing strategies, and improve customer retention.
+
+🎯 Objectives
+
+Identify distinct customer segments.
+Analyze the purchasing and preference patterns of each group.
+Provide actionable insights for targeted marketing.
+
+🗂 Dataset & Features
+The dataset contains customer-related variables, including:
+
+Feature	Description
+
+Income	Annual income of the customer
+MntTotal	Total money spent across all products
+Age	Customer's age
+AcceptedCmpOverall	Number of accepted marketing campaigns
+PhysicalPreference	Preference for in-store shopping
+OnlinePreference	Preference for online shopping
+TotalPurchases	Total number of purchases made
+MntRegularProducts	Amount spent on regular (non-promotional) products
+
+
+🛠 Methodology
+
+1. Data Preprocessing
+Handled missing values and outliers.
+Scaled numerical features for better clustering performance.
+
+2. Feature Selection
+Selected relevant features based on business relevance and data availability.
+
+3. K-Means Clustering
+Determined optimal number of clusters using the Elbow Method and Silhouette Score.
+Trained the K-Means model on standardized features.
+
+
+📦 Technologies Used
+
+Python: Data analysis and modeling
+
+Pandas, NumPy: Data handling
+
+Matplotlib, Seaborn: Visualization
+
+Scikit-learn: Machine learning (K-Means, scaling)
+
+Jupyter Notebook: Interactive analysis
