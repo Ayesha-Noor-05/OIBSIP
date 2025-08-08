@@ -1,0 +1,44 @@
+ App Distribution & Sentiment Analysis
+
+📌 Overview
+
+This project explores mobile app data to understand distribution patterns, popularity trends, and user sentiment. The analysis combines exploratory data analysis (EDA) with sentiment classification to uncover which types of apps dominate the market and how users feel about them.
+
+🎯 Objectives
+
+Analyze app distribution across categories.
+
+Identify categories with the highest ratings.
+
+Determine how many apps have 1M+ installations.
+
+Compare free vs paid app counts.
+
+Find which app types are installed the most.
+
+Perform sentiment analysis on user reviews.
+
+
+🛠 Sentiment Analysis
+
+Model: Support Vector Classifier (SVC)
+
+Preprocessing: Tokenization, stopword removal, lemmatization, TF-IDF vectorization
+
+Accuracy: 0.88
+
+Classified reviews as positive, negative, or neutral to understand user satisfaction trends.
+
+
+📦 Tools & Libraries
+
+Python – Data analysis and modeling
+
+Pandas, NumPy – Data handling
+
+Matplotlib, Seaborn – Visualization
+
+Scikit-learn – SVC, TF-IDF, accuracy scoring
+
+NLTK – Text preprocessing
+
